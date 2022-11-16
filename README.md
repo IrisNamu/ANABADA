@@ -1,12 +1,41 @@
+
 # Web Team Project
 <br>
 
 ## 🌱ANABADA_환경을 생각하는 중고 거래 사이트
 
-![001](https://user-images.githubusercontent.com/106574819/200173358-b661b669-cf5d-48bf-b1f6-3bb715c7e4be.png)
+### 💸중고 거래 사이트입니다.
 
-<br>
-<br>
+  **Java, JSP & Servlet, Javascript, HTML5, CSS3**을 이용한 프로젝트입니다. 
+  자신에게 필요 없는 물품을 1대 1 쪽지 혹은 댓글을 통해 판매하고, 물물교환이 가능합니다.
+
+
+😊자세한 내용은 아래 파일을 다운받아 보실 수 있습니다.
+[ANABADA_프로젝트.pdf](https://github.com/IrisNamu/ANABADA/files/9945931/ANABADA_.pdf)
+
+
+ 팀원 모두가 Bootstrap 템플릿 없이 직접, 사이트의 유저 인터페이스와 웹 디자인을 설계 및 구현을 하였으며, 인터렉티브 웹페이지, 자바스크립트를 이용한 유효성 검사를 경험하였습니다. 또한  백엔드 서버 환경 구축 및 DB 설계 및 구축을 담당하였습니다.
+
+### 🛠️ 사용 기술 및 라이브러리
+
+- Java
+- JSP & Servlet
+- Javascript (jQury, 
+-  HTML5, CSS3
+- Oracle
+- Apache Tomcat 9.0
+
+## 📱 핵심 기능
+
+1. 회원가입시 **욕설 필터링**을 통해 클린한 사이트를 지향하고 있습니다..
+2.  **물건을 판매하고, 1대 1 쪽지 혹은 댓글**을 통해  거래가 가능합니다.
+3. **신고 기능**을 통해 불량회원을 신고할 수 있습니다.
+4. **클라이언트(관리자)가 불량 회원을 관리하기 쉽도록** 하였습니다. 
+5. 자유게시판을 통해 회원들 간의 **소통을 도모**합니다.
+
+
+## 📆 개발 기간
+-2022.09.13. ~ 2022.10.25.
 
 ```
 Java, Javascript, JSP, HTML, CSS를 이용하여 중고 거래 사이트를 제작하였습니다.
@@ -30,22 +59,6 @@ Java, Javascript, JSP, HTML, CSS를 이용하여 중고 거래 사이트를 제�
 
 
 ***
-
-
-### 💻 프로그램
-- 개요 
-	 - Java, Javascript, HTML, CSS, JSP를 이용한 <b>웹 사이트</b> 
-- 개발기간 
-	 - 2022/09/13~2022/10/25
-- 개발목적
-	 - 산업혁명 이후 자원의 개발과 남용으로 다양한 환경 오염 문제가 대두되고 있습니다. <br> 자원의 재순환을 통해 환경 문제를 해결하는 것은 물론 <br>사용자의 경제적 이득도 추구하는 '중고 거래 사이트'를 만들고 싶었습니다.
-
-
-### ⚙️ 개발환경
-![Screenshot 2022-10-18 at 16 56 34](https://user-images.githubusercontent.com/107034832/196370936-992d8e59-1cd4-4f0b-8ca3-aadf00811904.JPG)
-
-### 📁 ER 다이어그램
-![Screenshot 2022-10-18 at 16 57 41](https://user-images.githubusercontent.com/107034832/196371477-dd1123d9-f6cb-4d22-9e76-823acfcbc630.JPG)
 
 ### ⛓️팀원 구성
 
