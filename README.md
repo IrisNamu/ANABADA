@@ -110,18 +110,24 @@ Javascript 라이브러리인 **Summernote**를 이용하여 원하는대로 글
 ![소개](https://user-images.githubusercontent.com/106574819/202625073-3719e1a7-fb74-484b-b85c-8f2b7e35f938.gif)
 <br>
 <br>
+
 - 자주 묻는 질문<br>
+
 ![자주묻는질문](https://user-images.githubusercontent.com/106574819/202703737-00e6b1a5-11d4-43ed-82b8-8513f148ddd2.gif)
 <br>
 <br>
+
 - 공지사항 게시판(관리자 권한으로 공지사항 글쓰기, 수정, 삭제)<br>
+
 ![공지사항](https://user-images.githubusercontent.com/106574819/202703810-7dd7bdbd-3aac-498b-adeb-4a11102e7291.gif)
-<br><br>
+<br>
+<br>
 
 - 로그인 및 회원가입(중복확인) 과 회원 정보 수정 및 탈퇴<br>
 ![회원가입](https://user-images.githubusercontent.com/106574819/202619308-22501d98-c7c6-4285-920e-43ae8d80a60e.gif)
 
-<br><br>
+<br>
+<br>
 
 
 ### ⛓️팀원 구성
