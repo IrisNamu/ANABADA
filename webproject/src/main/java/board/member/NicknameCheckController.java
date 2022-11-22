@@ -3,6 +3,7 @@ package board.member;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.URLEncoder;
+import java.util.Collection;
 import java.util.regex.Pattern;
 
 import javax.servlet.RequestDispatcher;
@@ -12,6 +13,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 @WebServlet("/Page/NicknameCheckForm.do")
 public class NicknameCheckController extends HttpServlet {
@@ -36,6 +42,18 @@ public class NicknameCheckController extends HttpServlet {
 		String spe = "^([ㄱ-ㅎ|가-힣|a-z|A-Z|0-9|]*)$";
 		boolean check = Pattern.matches(spe, nickname);
 
+		Document doc = Jsoup.connect(
+				"https://songsunkite.tistory.com/entry/%ED%81%AC%EB%A1%A4%EB%A7%81-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%9A%A9-%EA%B2%8C%EC%8B%9C%EB%AC%BC")
+				.get();
+
+		Elements elements = doc.select("div.contents_style p");
+
+		String badword = "";
+		for (Element e : elements) {
+			System.out.println(e.text());
+			badword = e.text();
+		}
+
 		if (nickname == "") {
 			req.setAttribute("Msg", "별명을 입력해주세요.");
 			req.getRequestDispatcher("NicknameCheckForm.jsp").forward(req, resp);
@@ -48,18 +66,20 @@ public class NicknameCheckController extends HttpServlet {
 			req.setAttribute("Msg", "공백 없이 한글, 영어, 숫자만 사용가능합니다.");
 			req.getRequestDispatcher("NicknameCheckForm.jsp").forward(req, resp);
 			nickname = "";
-		}else if(nickname == "null") {
+		} else if (nickname == "null") {
 			req.setAttribute("Msg", "은(는) 중복된 닉네임 입니다.");
 			req.getRequestDispatcher("NicknameCheckForm.jsp").forward(req, resp);
-
+		} else if (badword.contains(nickname)) {
+			req.setAttribute("Msg", "\"" + nickname + "\" 은(는) 욕설이 포함되어있습니다. <br>다시 작성해주세요.");
+			req.getRequestDispatcher("NicknameCheckForm.jsp").forward(req, resp);
 		} else {
 			if (result == true) {
-				req.setAttribute("Msg", nickname + "은(는) 중복된 닉네임 입니다.");
+				req.setAttribute("Msg",  "\"" + nickname + "\" 은(는) 중복된 닉네임 입니다.");
 				req.getRequestDispatcher("NicknameCheckForm.jsp").forward(req, resp);
 				System.out.println("중복된 닉네임 ");
 				nickname = "";
-			} else { 
-				req.setAttribute("Msg", nickname + "은(는) 사용가능합니다.");
+			} else {
+				req.setAttribute("Msg",  "\"" + nickname + "\" 은(는) 사용가능합니다.");
 
 				req.setAttribute("UseMsg", nickname);
 				req.getRequestDispatcher("NicknameCheckForm.jsp").forward(req, resp);
