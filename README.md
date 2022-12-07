@@ -84,7 +84,7 @@ Jsoup 라이브러리로 웹페이지를 크롤링
 
 ![교환 쪽지](https://user-images.githubusercontent.com/106574819/202619314-de0b3d0c-e474-46a4-83d0-4817ebd8c1ab.gif)
 
-
+ 
 ## 📌 핵심기능 3 - 신고 기능
 ![신고](https://user-images.githubusercontent.com/106574819/202619318-95cf7b61-e9e2-4872-90d1-712a75b9c6dd.gif)
 
