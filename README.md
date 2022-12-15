@@ -12,7 +12,7 @@
 
 
 😊자세한 전체 내용은 아래 파일을 다운받아 보실 수 있습니다.<br>
-[ANABADA_프로젝트.pdf](https://github.com/IrisNamu/ANABADA/files/9945931/ANABADA_.pdf) <br>
+[ANABADA_프로젝트.pdf](https://github.com/IrisNamu/ANAB ADA/files/9945931/ANABADA_.pdf) <br>
 
 
 😊송유진 본인이 한 내용은 아래 파일을 다운받아 보실 수 있습니다.<br>
